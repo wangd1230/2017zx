@@ -4,12 +4,26 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="jquery.min.js">
+	<script type="text/javascript" src="jquery.min.js"></script>
 	<link rel="stylesheet" href="bootstrap.min.css">
-	<link rel="stylesheet" href="bootstrap.min.js">
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+	<script type="text/javascript" src="jsv1.1.7/bmob-min.js"></script>
+	
+	<!-- <script type="text/javascript" src="form.js"></script> -->
+	<script type="text/javascript" src="main.js"></script>
+	<style>
+		.footer{
+			width: 100%;
+			background-color: black;
+			position: absolute;
+			bottom: 0;
+			color: #ffffff;
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
-	<div class="container">
+	<div class="container-fluid">
 		<h4 style="text-align: center;">中国传媒大学学生会招新报名表</h1>
 		<form action="">
 			<div class="form-group">
@@ -30,42 +44,46 @@
 			</div>
 			<div class="form-group">
 				<label for="">志愿一</label>
-				<select name="" id="" class="form-control">
-					<option value="">行政部</option>
-					<option value="">学习实践部</option>
-					<option value="">文艺部</option>
-					<option value="">宣传部</option>
-					<option value="">体育部</option>
-					<option value="">媒体部</option>
-					<option value="">技术部</option>
-					<option value="">网络推广部</option>
-					<option value="">生活权益部</option>
-					<option value="">民族部</option>
-					<option value="">外联部</option>
+				<select name="" id="zhiyuanyi" class="form-control">
+					<option value="行政部">行政部</option>
+					<option value="学习实践部">学习实践部</option>
+					<option value="文艺部">文艺部</option>
+					<option value="宣传部">宣传部</option>
+					<option value="体育部">体育部</option>
+					<option value="媒体部">媒体部</option>
+					<option value="技术部">技术部</option>
+					<option value="网络推广部">网络推广部</option>
+					<option value="生活权益部">生活权益部</option>
+					<option value="民族部">民族部</option>
+					<option value="外联部">外联部</option>
 				</select>
 			</div>
 			<div class="form-group">
 				<label for="">志愿二</label>
-				<select name="" id="" class="form-control">
-					<option value="">行政部</option>
-					<option value="">学习实践部</option>
-					<option value="">文艺部</option>
-					<option value="">宣传部</option>
-					<option value="">体育部</option>
-					<option value="">媒体部</option>
-					<option value="">技术部</option>
-					<option value="">网络推广部</option>
-					<option value="">生活权益部</option>
-					<option value="">民族部</option>
-					<option value="">外联部</option>
+				<select name="" id="zhiyuaner" class="form-control">
+					<option value="行政部">行政部</option>
+					<option value="学习实践部">学习实践部</option>
+					<option value="文艺部">文艺部</option>
+					<option value="宣传部">宣传部</option>
+					<option value="体育部">体育部</option>
+					<option value="媒体部">媒体部</option>
+					<option value="技术部">技术部</option>
+					<option value="网络推广部">网络推广部</option>
+					<option value="生活权益部">生活权益部</option>
+					<option value="民族部">民族部</option>
+					<option value="外联部">外联部</option>
 				</select>
 			</div>
 			<div class="form-group">
 				<label for="techang">兴趣特长</label>
 				<textarea type="text" class="form-control" id="techang" placeholder="兴趣特长"></textarea>
 			</div>
-			<button type="submit" class="btn btn-default">提交</button>
+			<div class="btn btn-default" style="margin: 0 auto;">提交</div>
 		</form>
+		
+	</div>
+	<div class="footer">
+		<h6>技术支持：中国传媒大学学生会网络推广部</h6>
 	</div>
 </body>
 </html>
