@@ -12,14 +12,18 @@ $('.btn').click(function(){
 	var phone = String($('#phone').val());
 	var zhiyuanyi = $('#zhiyuanyi').val();
 	var zhiyuaner = $('#zhiyuaner').val();
+	var zhiyuansan = $('#zhiyuansan').val();
 	var techang = $('#techang').val();
 	//
+	if (name !=""&&xueyuan !="" &&zhuanye !="" &&phone !="" &&zhiyuanyi !="" &&zhiyuaner !="" &&
+		techang !="" ) {
 	student.set("name",name);
 	student.set("xueyuan",xueyuan);
 	student.set("zhuanye",zhuanye);
 	student.set("phone",phone);
 	student.set("zhiyuanyi",zhiyuanyi);
 	student.set("zhiyuaner",zhiyuaner);
+	student.set("zhiyuansan",zhiyuansan);
 	student.set("techang",techang);
 	student.save(null,{
 	success:function(student){
@@ -29,6 +33,10 @@ $('.btn').click(function(){
 		console.log("添加失败");
 }
 })
-
+}
+else{
+	alert("请填写完整！");
+}
 })
+
 })
